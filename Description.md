@@ -11,6 +11,48 @@
    - **Benefits:** Early prediction of diabetes risk can enable healthcare professionals to offer targeted interventions, personalized advice, and proactive management strategies for at-risk individuals, thereby potentially preventing or delaying the onset of diabetes.
 
 3. **Iris Classification:**
-   - **Objective:** The aim of this project is to create a classification model that can accurately identify the species of iris flowers based on features like sepal length, sepal width, petal length, and petal width.
-   - **Methodology:** Machine learning classification algorithms, including techniques like k-nearest neighbors or support vector machines, may be applied to a dataset containing measurements of various iris flowers. The model would learn to differentiate between different iris species based on these features.
-   - **Benefits:** Iris classification is a classic problem in machine learning and serves as a good introduction to classification tasks. The model could be used in botanical research or educational settings to automate the identification of iris species.
+
+
+1. **Data Loading and Exploration (EDA):**
+   - The data is loaded from a CSV file using Pandas.
+   - Exploratory Data Analysis (EDA) is performed, including checking the data types, summary statistics, and handling missing values.
+
+2. **Feature Engineering:**
+   - Visualization using a count plot to show the distribution of target classes.
+   - Encoding the categorical target variable using LabelEncoder.
+   - Detection and handling of outliers using the IQR method.
+
+3. **Data Scaling:**
+   - Standardization of features using `StandardScaler` from scikit-learn.
+
+4. **Feature Selection:**
+   - Calculation of correlation matrix and visualization using a heatmap.
+
+5. **Model Training (Logistic Regression):**
+   - Splitting the dataset into training and testing sets.
+   - Training a Logistic Regression model.
+   - Evaluating the model on both the training and testing sets.
+
+6. **Decision Tree Model:**
+   - Training a Decision Tree classifier.
+   - Evaluating the Decision Tree model on both the training and testing sets.
+   - Visualization of the Decision Tree using `plot_tree`.
+
+7. **Hyperparameter Tuning for Decision Tree:**
+   - Performing a randomized search for optimal hyperparameters.
+   - Re-training the Decision Tree model with the tuned hyperparameters.
+   - Evaluating the tuned Decision Tree model on both training and testing sets.
+
+8. **Random Forest Model:**
+   - Training a Random Forest classifier.
+   - Evaluating the Random Forest model on both the training and testing sets.
+   - Hyperparameter tuning for Random Forest using a randomized search.
+   - Re-training the Random Forest model with the tuned hyperparameters.
+   - Evaluating the tuned Random Forest model on both training and testing sets.
+
+9. **K-Nearest Neighbors (KNN) Model:**
+   - Training a K-Nearest Neighbors classifier.
+   - Evaluating the KNN model on both the training and testing sets.
+
+10. **Model Evaluation:**
+    - Displaying confusion matrices and accuracy scores for different models on both training and testing sets.
