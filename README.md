@@ -1,4 +1,4 @@
-🚀 **CodeSoft Internship Projects Overview:**
+🚀 **CODSOFT Internship Projects Overview:**
 
 1. **Health Insurance Cost Prediction 🏥💰:**
    - **Objective:** Predict health insurance costs based on individual factors.
